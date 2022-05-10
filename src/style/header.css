@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --font-big: 48px;
+  --font-medium: 36px;
+  --font-small: 15px;
+  --font-micro: 10px;
+}
+
+.webBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.webBar .webTitle {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.webBar .webTitle .webMainTitle {
+  font-size: var(--font-big);
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.webBar .webTitle .webSubTitle {
+  color: #999999;
+  font-size: var(--font-small);
+}
+
+.webBar .wrapSearchFood {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.webBar .wrapSearchFood .searchFood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.webBar .wrapSearchFood .searchFood input {
+  font-size: var(--font-small);
+  outline: none;
+  border: 1px solid #999999;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.webBar .wrapSearchFood .searchFood input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: var(--font-small);
+}
+
+.webBar .wrapSearchFood .searchFood input:-ms-input-placeholder {
+  color: #999999;
+  font-size: var(--font-small);
+}
+
+.webBar .wrapSearchFood .searchFood input::-ms-input-placeholder {
+  color: #999999;
+  font-size: var(--font-small);
+}
+
+.webBar .wrapSearchFood .searchFood input::placeholder {
+  color: #999999;
+  font-size: var(--font-small);
+}
+
+.webBar .wrapSearchFood .searchFood button {
+  background-color: transparent;
+  border: none;
+}
+
+.webBar .wrapWelcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.webBar .wrapWelcome .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.webBar .wrapWelcome .welcome .userName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.webBar .wrapWelcome .welcome button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: var(--font-small);
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #7393B3), color-stop(50%, #7393B3), to(#747880));
+  background-image: linear-gradient(to right, #7393B3 50%, #7393B3 50%, #747880);
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-left: 20px;
+}
+
+.webBar .wrapWelcome .welcome button:hover {
+  background-position: 100% 0%;
+}
+
+.webBar .wrapWelcome .welcome .inOutBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.webBar .wrapWelcome .welcome span {
+  font-size: var(--font-medium);
+  font-weight: bold;
+}
+/*# sourceMappingURL=header.css.map */

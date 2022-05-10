@@ -1,0 +1,130 @@
+//TO DO 
+//검색 input 항상 가운데 위치 -> position : absolute??
+//loginBtn 다르게 꾸미기
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    // font -size 
+    --font-big : 48px;
+    --font-medium : 36px;
+    --font-small : 15px;
+    --font-micro: 10px;
+}
+.webBar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    .webTitle{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .webMainTitle{
+            font-size: var(--font-big);
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
+        }
+        .webSubTitle{
+            color: #999999;
+            font-size: var(--font-small);
+        }
+    }
+    .wrapSearchFood{
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform : translate((-50%, -50%));
+        display: inline-block;
+        .searchFood{
+            display: flex;
+            align-items: center;
+            input{
+                font-size: var(--font-small);
+                outline: none;
+                border: 1px solid #999999;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            input::placeholder{
+                color: #999999;
+                font-size: var(--font-small);
+            }
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+        
+    }
+    .wrapWelcome{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 15px;
+        .welcome{
+            display: flex;
+            .userName{
+                display: flex;
+                align-items: center;
+            }
+            button{
+                // position: absolute;
+                border: none;
+                background: none;
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 15px 20px;
+                font-size: var(--font-small);
+                border-radius: 30px;
+                background-image: linear-gradient(to right, 	#7393B3 50%, 	#7393B3 50%, #747880);
+                //check background size, position
+                background-size: 200%;
+                background-position: 0%;
+                transition: 0.4s;
+                margin-left: 20px;
+            }
+            button:hover{
+                background-position: 100% 0%;
+            }
+            .inOutBtn{
+                display: flex;
+                
+            }
+            span{
+                font-size: var(--font-medium);
+                font-weight: bold;
+            }
+        }
+    }
+    // .wrapWelcome{
+    //     display: flex;
+    //     align-items: center;
+    //     transform : translate((-50%, -50%));
+    //     // position: absolute;
+    //     .welcome{
+    //         display: flex;
+    //         width: 300px;
+    //         span{
+    //             // position: absolute;
+    //         }
+    //         button{
+                
+    //             border: none;
+    //             background: none;
+    //             color: #000;
+    //             font-weight: bold;
+    //             cursor: pointer;
+    //         }
+           
+         
+    //     }
+    // }
+   
+}

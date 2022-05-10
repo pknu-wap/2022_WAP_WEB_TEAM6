@@ -1,0 +1,171 @@
+// TO DO 
+// 1. 부경 이미지 추가
+// 2. box-shdow 로 wrap 변경
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    // font -size 
+    --font-big : 48px;
+    --font-medium : 36px;
+    --font-small : 15px;
+    --font-micro: 10px;
+}
+
+.loginPage{
+//    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrap-loginForm{
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    input,button {
+        appearance: none;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .loginForm{
+        display: block;
+        position: relative;
+        .form-inner{
+            position: relative;
+            display: block;
+            padding: 30px;
+            //check z-index
+            z-index: 2;
+            h2{
+                color: #888;
+                font-size : var(--font-medium);
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            img{
+                width: 70px;
+                height: 70px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: ceter;
+            }
+            .error{
+                display: flex;
+                justify-content: center;
+                color: red;
+                font-weight: bold;
+            }
+            .form-group{
+                display: block;
+                color: #666;
+                width: 300px;
+                margin-bottom: var(--font-small);
+                label{
+                    display: block;
+                    color: #666;
+                    font-size: var(--font-small);
+                    margin-bottom: 5px;
+                    transition: 0.4s;
+                    cursor: pointer;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 10px 15px;
+                    background-color: #F8F8F8;
+                    border-radius: 8px;
+                    transition: 0.4s;
+                }
+                //check focus
+                input:focus{
+                    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+                }
+            }
+            .form-group:focus-within label{
+                color: #FE4880;
+            }
+        }
+    }
+    
+.submitBtn{
+        text-align: center;
+        button{
+            width: 100%;
+            //check difference block, inline-block
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+
+            background-image: linear-gradient(to right, #7393B3 50%, 	#7393B3 50%, #747880);
+            //check background size, position
+            background-size: 200%;
+            background-position: 0%;
+            transition: 0.4s;
+
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            //check backgroud position
+            background-position: 100% 0%;
+        }
+    }
+    .signup{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;   
+        margin-top: 10px;
+        font-size: var(--font-micro);
+        a{
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #6FA8DC;;
+        }
+    }
+}
+
+
+/*
+  .loginForm:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: 1;
+        background-image: linear-gradient(to bottom right, #FFCE00, #FE4880);
+    }
+
+.form-inner{
+            position: relative;
+            display: block;
+            background-color: #FFF;
+            padding: 30px;
+            //check z-index
+            z-index: 2;
+*/
