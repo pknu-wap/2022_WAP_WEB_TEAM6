@@ -1,4 +1,3 @@
-
 import "./App.css"
 
 import React, {useState} from 'react';
@@ -7,13 +6,13 @@ import Header from './components/Header';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
 import MainPage from './components/MainPage';
-// import mainPage from './components/MainPage';
-// import SignupPage from './components/signupPage';
+import UserComponent from "./components/UserComponent";
+
+
 
 
 function App() {
-  // 유저가 양식에 맞게 회원가입을 완료하면 adminUser에 회원정보를 추가한다. 정보가 2개 이상이 되면 forEach로 하나씩 정보를 확인한다
-  //toDos = toDos.filter((toDo) => toDo.id !== parseInt(delToDo.id));
+
   const adminUser = {
     email : "dnddl8280@pukyong.ac.kr",
     password : "chlgusdnd123"
@@ -22,11 +21,10 @@ function App() {
   const [user, setUser] = useState({name:"",email:""});
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
-  const [isSignUp , setIsSignUp] = useState(false);
   
   const Login = details => {
     console.log(details);
-    if(details.email == adminUser.email && details.password == adminUser.password){
+    if(details.email === adminUser.email && details.password === adminUser.password){
       console.log("Logged in");
       setIsLogin(true);
       setUser({
@@ -34,9 +32,6 @@ function App() {
         email : details.email
       });
     } else{
-      // id가 일치하지 않습니다 , 비밀번호가 일치하지 않습니다
-      // 유저들은 무엇이 틀렸는지를 알고싶어 할 것.
-      // 그렇다면 아이디/비밀번호 찾기의 경우에는?
       console.log("Details do not match");
       setError("로그인 정보가 일치하지 않습니다");
     }
@@ -47,7 +42,6 @@ function App() {
     setIsLogin(false);
     setUser({name:"",email:""});
   }
-  // signUp페이지가 클릭이 되면 이동 페이지를 다르게함
   return (
     <BrowserRouter>
     <div className="App">
@@ -55,26 +49,30 @@ function App() {
       />
       <div className="mainPage">
         <MainPage />
-      {/* {isLogin? <MainPage /> 
-        : <div className="goLogin">
-          <MainPage/> <LoginPage Login={Login} error={error} user={user} isLogin={isLogin}/>
-          </div>} */}
         <Routes>
-        {/* {isLogin? <MainPage /> 
-        : <div className="goLogin">
-          <MainPage/> <LoginPage Login={Login} error={error} user={user} isLogin={isLogin}/>
-          </div>} */}
         <Route path='/login' element={<LoginPage Login={Login} error={error} isLogin={isLogin} />}/>
         <Route path='/signUp' element={<SignupPage/>}/>
         </Routes>
       </div>
-      
+      {/* <UserComponent /> */}
     </div>
    </BrowserRouter>    
   );
 }
 
 export default App;
+
+  // 유저가 양식에 맞게 회원가입을 완료하면 adminUser에 회원정보를 추가한다. 정보가 2개 이상이 되면 forEach로 하나씩 정보를 확인한다
+  //toDos = toDos.filter((toDo) => toDo.id !== parseInt(delToDo.id));
+/* {isLogin? <MainPage /> 
+        : <div className="goLogin">
+          <MainPage/> <LoginPage Login={Login} error={error} user={user} isLogin={isLogin}/>
+          </div>} */
+
+/* {isLogin? <MainPage /> 
+        : <div className="goLogin">
+          <MainPage/> <LoginPage Login={Login} error={error} user={user} isLogin={isLogin}/>
+          </div>} */
 
 /*
 <Route path='/login' 

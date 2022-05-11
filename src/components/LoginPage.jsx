@@ -6,12 +6,6 @@ import { Link , useNavigate} from 'react-router-dom';
 import "../style/login.css";
 
 function LoginPage({ Login, error , isLogin}) {
-  // let navigate = useNavigate();
-  // function pageMove(){
-  //   navigate("../components/SignupPage.jsx");
-  // }
-  // const[details, setDetails] -> setDetails data changed , ui refreshed + rerendering
-  // details 의  값을 초기화 useState({name:"",email:"",password:""})
   const [details, setDetails] = useState({name:"",email:"",password:""})
   const navigate = useNavigate();
   const submitHandler = e =>{
@@ -31,7 +25,7 @@ function LoginPage({ Login, error , isLogin}) {
           <h2>부경 맛집</h2>
           <img src={require('../images/pknu.png') } alt="" />
           {/* ERROR */}
-          {(error != "") ? 
+          {(error !== "") ? 
           <div className="error">
             {error}
           </div> : ""}
