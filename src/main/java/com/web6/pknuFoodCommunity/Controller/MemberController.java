@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@CrossOrigin(origins = "http://localhost:3000")
 public class MemberController {
 
     private final MemberService memberService;
@@ -29,9 +31,9 @@ public class MemberController {
         return "members/createMemberForm";
     }
 
-    // 데이터를 등록할 때 Post를 사용함
+    // 회원가입 데이터 등록
     @PostMapping("members/new")
-    public String create(@RequestBody Map<String, Object> requestData){
+    public String createMember(@RequestBody Map<String, Object> requestData){
         JSONObject newMember = new JSONObject(requestData);
         Member member = new Member();
         JSONObject sendMember = newMember.getJSONObject("member");
@@ -48,7 +50,7 @@ public class MemberController {
     }
 
     @GetMapping("/members")
-    public String list(Model model){
+    public String showMemberList(Model model){
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
         return "members/memberList";
