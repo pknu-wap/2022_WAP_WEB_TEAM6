@@ -1,6 +1,5 @@
 package com.web6.pknuFoodCommunity.Service;
 
-import com.web6.pknuFoodCommunity.domain.Member;
 import com.web6.pknuFoodCommunity.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
