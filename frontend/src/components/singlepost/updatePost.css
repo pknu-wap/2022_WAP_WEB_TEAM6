@@ -1,0 +1,105 @@
+.back {
+    display: flex;
+    justify-content: flex-end;
+}
+.back > .backBtn > img {
+    width: 25px;
+    height: 25px;
+}
+
+.updateContent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.updateContent > span {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.updateContent > .updateInput{
+    display: flex;
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 10px;
+    border: none;
+}
+.updateContent > .updateInput:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.updateContent > img {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.updateContent > label {
+    display: flex;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #3396FF ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.locationSearch{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.locationSearch > .locationInput {
+   border: none;
+}
+.locationSearch > .locationInput:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.locationSearch > button > img {
+    width: 45px;
+    height: 45px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.location > #map {
+    width: 350px;
+    height: 350px;
+}
+.location > span {
+    width: 30%;
+    margin-bottom: 10px;
+}
+.location > span > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.updateBtn {
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto ;
+    justify-content: center;
+    margin-top: 30px;
+    width: 10%;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background-color: salmon;
+    border-radius: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.writeReview{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.writeReview > input {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.writeReview > input:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.writeReview > textarea {
+    display: flex;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.writeReview > textarea:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.writeReview > .reviewSubmit {
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3396FF ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+

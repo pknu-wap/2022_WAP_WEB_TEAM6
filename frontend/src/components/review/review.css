@@ -1,0 +1,100 @@
+.review{
+    width: 100%;
+}
+.reviewContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.userAndSetting{
+    width: 100%;
+    display: flex;
+}
+.userAndSetting > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.userAndSetting > .userName{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.userAndSetting > .reviewEdit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviewEdit > button > img {
+    width: 20px;
+    height: 20px;
+}
+
+.reviewTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.reviewDesc{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.reviewUpdate{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.reviewUpdate > .backBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+.reviewUpdate > .backBtn > button > img {
+    width: 20px;
+    height: 20px;
+}
+.reviewUpdate > textarea {
+    display: flex;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.reviewUpdate > input {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.reviewUpdate > input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.reviewUpdate > textarea:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.reviewUpdate > button {
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3396FF ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

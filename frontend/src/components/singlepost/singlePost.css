@@ -1,0 +1,163 @@
+.singlePost{
+    flex: 9;
+    background-color: #fff;
+}
+.singlePostWrapper{
+    padding: 0px 20px 0px 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.postTitle{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.singlePostImg{
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    margin : 0 auto ;
+    margin-bottom: 10px;
+}
+/* post desc */
+.postDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.postDesc > span{
+    margin: 0 auto;
+    font-weight: bold;
+}
+.postDesc > .singlePostEdit{
+    display: flex;
+    justify-content: flex-end;   
+}
+/* resInformList */
+.resInformList{
+    padding: 10px;
+    list-style: none;
+}
+.resInformList > li {
+    margin-bottom: 20px;
+}
+.resInformList > li> img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.resInformList > li > span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.resInformList > li > a > span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.detailBtn{
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: #F7E600;
+    color : #fff;
+    border-radius: 30px;
+}
+/* post edit */
+.editTitle{
+    text-align: center;
+    margin: 10px;
+    font-size: 28px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    color: gray;
+}
+.editTitle:focus{
+    outline: none;
+}
+.editDesc{
+    border: none;
+    color: #666;
+    background: transparent;
+    font-size: 18px;
+    line-height: 25px;
+}
+.editDesc:focus{
+    outline: none;
+}
+.editSubmitBtn{
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: teal;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.singlePostEdit {
+    display: flex;
+    justify-content: flex-end ;
+}
+.singlePostEdit > button{
+    border: none;
+    background : none;
+    cursor: pointer;
+    margin: 0 15px 15px 0;
+}
+.singlePostEdit > button > img{
+    width: 25px;
+    height: 25px;
+}
+.informReview{
+    display: flex;   
+}
+.resInform{
+    display: flex;
+    flex: 6;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+/* reviews */
+.resReviews{
+    display: flex;
+    flex: 4;
+    justify-content: flex-start;
+    flex-direction: column;   
+}
+.resReviews > .reviewTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.resReviews > .reviewBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.resReviews > .reviewBtn > button {
+    font-size: 14px;
+    font-weight: bold;
+}
+.resReviews > .reviewBtn > button > img {
+    width: 20px;
+    height: 20px;
+}
+.writeInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 50vw;
+}
+.writeText{
+    font-size: 20px;
+    height: 30vh;
+}
+
+
+
+

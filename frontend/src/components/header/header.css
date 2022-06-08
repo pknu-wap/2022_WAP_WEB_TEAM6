@@ -1,0 +1,9 @@
+.header{
+    margin-top: 60px;
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: center;
+    color: #444;
+}

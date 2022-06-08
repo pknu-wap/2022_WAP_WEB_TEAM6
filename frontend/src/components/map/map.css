@@ -1,0 +1,62 @@
+.mapWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#map{
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+.proposeClick{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.mapMarker{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+
+.addressCheck{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.clickCheck{
+    height: 30px;
+    width: 30px;
+    margin: auto 0 ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addressCat{
+    display: flex;
+    flex-direction: column;   
+    width: 30%;
+}
+.addressCat > .address{
+    display: flex;
+    margin-bottom: 10px;
+}
+.addressCat > .address > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.addressCat > .category{
+    display: flex;
+    margin-bottom: 10px;
+}
+.addressCat > .category > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+

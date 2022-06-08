@@ -1,0 +1,132 @@
+.write{
+    padding-right: 0;
+    display: flex;
+    flex: 9;
+}
+.writeForm{
+    width: 100%;
+}
+.formInputGroup{
+    display: flex;
+}
+.writeFormGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.informTitle{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.textInform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 5;
+}
+.textInform > input{
+    width: 50%;
+    margin-bottom: 10px;
+    border: none;
+}
+.textInform > input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.textInform > .imgTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.textInform > .selectTitle{
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textInform > select{
+    width: 50%;
+}
+.textInform > .settingImg{
+    display: flex;
+    width: 60%;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-bottom: 20px;
+}
+.textInform > .settingImg > .proposeImg{
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.writeImg{
+    width: 60%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.locationInform{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    flex: 5;
+}
+.locationInform > .locationSearch {
+    width: 60%;
+}
+.locationInform > .locationSearch > input{
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+}
+.locationInform > .locationSearch > input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.locationInform > .locationSearch > button > img {
+    width: 45px;
+    height: 45px;
+}
+.locationInform > input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.writeInput{
+    font-size: 20px;
+    border: none;
+    padding: 20px;   
+}
+.writeInput:focus{
+    outline: none;
+}
+
+button{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.saveBtn{
+    display: flex;
+    margin: 0 auto ;
+    justify-content: center;
+    margin-top: 30px;
+    width: 10%;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background-color: salmon;
+    border-radius: 30px;
+    cursor: pointer;
+}
