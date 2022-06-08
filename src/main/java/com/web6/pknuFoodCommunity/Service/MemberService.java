@@ -1,14 +1,14 @@
 package com.web6.pknuFoodCommunity.Service;
 
 import com.web6.pknuFoodCommunity.domain.Member;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.web6.pknuFoodCommunity.repository.MemberRepository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 @Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
@@ -33,14 +33,7 @@ public class MemberService {
                 });
     }
 
-    /**
-     * 전체 회원 조회
-     */
-    public List<Member> findMembers() {
-        return memberRepository.findAll();
-    }
-
-    public Optional<Member> findOne(Long memberStudentNumber) {
-        return memberRepository.findByStudentNumber(memberStudentNumber);
+    public Optional<Member> findByEmail(String email){
+        return memberRepository.findByEmail(email);
     }
 }

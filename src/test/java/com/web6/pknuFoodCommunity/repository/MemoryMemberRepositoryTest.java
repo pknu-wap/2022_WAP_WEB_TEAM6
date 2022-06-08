@@ -1,7 +1,6 @@
 package com.web6.pknuFoodCommunity.repository;
 
 import com.web6.pknuFoodCommunity.Service.MemberService;
-import com.web6.pknuFoodCommunity.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

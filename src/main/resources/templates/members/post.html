@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/api/auth/post" method="post">
+        <div class="form-group">
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" placeholder="제목을 입력하세요"> <br>
+            <label for="desc">설명</label>
+            <input type="text" id="desc" name="desc" placeholder="설명을 입력하세요"> <br>
+            <label for="username">작성자</label>
+            <input type="text" id="username" name="username" placeholder="작성자를 입력하세요"> <br>
+            <label for="category">카테고리</label>
+            <input type="text" id="category" name="category" placeholder="카테고리를 입력하세요"> <br>
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+
+</html>
